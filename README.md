@@ -10,7 +10,7 @@ When you open the app you will be presented with the date and a view spread of 9
 
 ## Deployed application
 
-[https://judno.github.io/passwordGenerator/]
+[https://judno.github.io/Day-Planner/]
 
 License
 MIT license
