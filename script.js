@@ -11,13 +11,12 @@ displayDay();
 function renderRows() {
   //add number id for row
   let timeElements = document.querySelectorAll(".row");
-  //console.log(timeElements);
-  let userTime = moment().hour();
-  //console.log(userTime);
 
-  //loop to loop through the dom timeslots and sorts the time properties by colour
+  let userTime = moment().hour();
+
+  //loop to loop through the dom timeslots and sort the time properties by colour
   for (let i = 0; i < timeElements.length; i++) {
-    //converts id information into a string
+    //convert id information into a string
     let timeNumber = parseInt(timeElements[i].dataset.time, 10);
     console.log(timeNumber);
     let textarea = document.querySelector(
@@ -43,8 +42,6 @@ function renderRows() {
   }
 }
 // Create key to save in localstorage
-
-//function to create a key
 function createKey(hour) {
   let dateString = moment().format("DD, MM, YY");
 
